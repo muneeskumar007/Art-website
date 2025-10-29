@@ -16,10 +16,27 @@
 
   
 
-  <styl>
-   
+  
 
-  </style>
+
+
+ <meta name="title" content="Yathish Arts">
+    <meta name="description" content=" My Art work is 100% hand made, explores memory, atmosphere, and subtle forms — often using soft palettes or deep natural tones. My Work price affordable based on the type of Art work and frame option.All over india Delivery Available.">
+    <meta name="keywords" content="yathish Arts">
+    <meta name="author" content="YATHISH MUTHAIYA">
+
+    <meta property="og:url" content="https://yathisharts.netlify.app/">
+    <link rel="canonical" href="https://yathisharts.netlify.app/">
+    
+    
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="rating" content="General">
+    <meta name="copyright" content="YATHISH MUTHAIYA">
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    <meta name="target" content="all">
+    <meta name="HandheldFriendly" content="True">
 </head>
 
 <body class="antialiased">
@@ -297,37 +314,57 @@
 
 
         <!-- Left form -->
-        <form class="glass p-6 rounded-lg soft-shadow space-y-4">
-          <div>
-            <label class="block text-sm mb-1">Name</label>
-            <input type="text" class="w-full p-2 rounded bg-slate-800 text-white border border-slate-700" placeholder="Your Name" />
-          </div>
-          <div>
-            <label class="block text-sm mb-1">Art Work</label>
-            <select class="w-full p-2 rounded bg-slate-800 text-white border border-slate-700">
-              <option>select Art Work</option>
-              <option>Black & White Art</option>
-              <option>Colour Pencil Art</option>
-              <option>Water Colour Art</option>
-              <option>Blood Art</option>
-               <option>Oil Pastel Art</option>
-            </select>
-          </div>
-          <div>
-            <label class="block text-sm mb-1">Option</label>
-            <select class="w-full p-2 rounded bg-slate-800 text-white border border-slate-700">
-              <option>Select Frame</option>
-              <option>Single</option>
-              <option>Couple</option>
-              <option>Family</option>
-            </select>
-          </div>
-          <div>
-            <label class="block text-sm mb-1">Description</label>
-            <textarea class="w-full p-2 rounded bg-slate-800 text-white border border-slate-700" rows="4" placeholder="Write your message..."></textarea>
-          </div>
-          <button type="button" class="px-5 py-2 rounded-md text-black font-semibold w-full" style="background: linear-gradient(90deg,var(--accent),var(--accent-2));">Send</button>
-        </form>
+       <form id="artForm" class="glass p-6 rounded-lg soft-shadow space-y-4">
+  <div>
+    <label class="block text-sm mb-1">Name</label>
+    <input id="name" type="text" class="w-full p-2 rounded bg-slate-800 text-white border border-slate-700" placeholder="Your Name" required/>
+  </div>
+  <div>
+    <label class="block text-sm mb-1">Art Work</label>
+    <select id="artwork" class="w-full p-2 rounded bg-slate-800 text-white border border-slate-700" required>
+      <option value="">Select Art Work</option>
+      <option>Black & White Art</option>
+      <option>Colour Pencil Art</option>
+      <option>Water Colour Art</option>
+      <option>Blood Art</option>
+      <option>Oil Pastel Art</option>
+    </select>
+  </div>
+  <div>
+    <label class="block text-sm mb-1">Option</label>
+    <select id="option" class="w-full p-2 rounded bg-slate-800 text-white border border-slate-700" required>
+      <option value="">Select Frame</option>
+      <option>Single</option>
+      <option>Couple</option>
+      <option>Family</option>
+    </select>
+  </div>
+  <div>
+    <label class="block text-sm mb-1">Description</label>
+    <textarea id="desc" class="w-full p-2 rounded bg-slate-800 text-white border border-slate-700" rows="4" placeholder="Just give more details ..."></textarea>
+  </div>
+<!-- 
+  <button type="button" id="sendBtn" 
+    class="px-5 py-2 rounded-md text-black font-semibold w-full"
+    style="background: linear-gradient(90deg,var(--accent),var(--accent-2));">
+    Send
+  </button> -->
+  <button type="button" id="sendBtn"
+  class="relative w-full overflow-hidden px-6 py-2 rounded-md text-black font-semibold 
+         transition-all duration-300 ease-in-out group"
+  style="background: linear-gradient(90deg,var(--accent),var(--accent-2));">
+  
+  <span class="relative z-10">Send</span>
+  
+ 
+  <span class="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 
+               opacity-0 group-hover:opacity-100 blur-lg transition-opacity duration-500"></span>
+  
+  <span class="absolute top-0 left-[-100%] w-full h-full bg-white/20 transform 
+               skew-x-[-45deg] group-hover:left-[200%] transition-all duration-700 ease-out"></span>
+</button>
+
+</form>
 
       </div>
     </section>
@@ -408,6 +445,30 @@ mobileNav.querySelectorAll('a').forEach(link => {
     });
   });
 
+
+  // for order through whatsapp
+  document.getElementById('sendBtn').addEventListener('click', function() {
+    const name = document.getElementById('name').value.trim();
+    const artwork = document.getElementById('artwork').value;
+    const option = document.getElementById('option').value;
+    const desc = document.getElementById('desc').value.trim();
+
+    if (!name || !artwork || !option) {
+      alert('Please fill in all required fields!');
+      return;
+    }
+
+    const message = `🎨 *New Art Request*%0A
+👤 *Name:* ${name}%0A
+🖌️ *Art Work:* ${artwork}%0A
+🖼️ *Option:* ${option}%0A
+📝 *Description:* ${desc || 'N/A'}%0A`;
+
+    const phoneNumber = "7904911507"; // 🔹 Replace with your WhatsApp number (e.g., 919876543210)
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+
+    window.open(whatsappURL, "_blank");
+  });
 
 
     

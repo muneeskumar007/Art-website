@@ -2,9 +2,9 @@
 // ---------- QUICK CONFIG ----------
     // Replace this with your WhatsApp number in international format (no +).
     // Example: '919876543210' for India +91 9876543210
-    const WHATSAPP_NUMBER = '919876543210';
+    // const WHATSAPP_NUMBER = '919876543210';
     // If you'd rather keep link in HTML, you can ignore this; this script updates the link automatically.
-    document.getElementById('whatsappLink').href = 'https://wa.me/' + WHATSAPP_NUMBER;
+    // document.getElementById('whatsappLink').href = 'https://wa.me/' + WHATSAPP_NUMBER;
 
     // ---------- Mobile Menu Toggle ----------
     const mobileBtn = document.getElementById('mobileMenuBtn');
