@@ -310,7 +310,7 @@
       <div class="grid md:grid-cols-2 gap-8">
          <!-- Left table -->
         <div class="overflow-x-auto glass p-4 rounded-lg soft-shadow">
-          <table class="w-full text-left border-collapse border border-slate-700 text-sm">
+          <!-- <table class="w-full text-left border-collapse border border-slate-700 text-sm">
             <thead class="bg-slate-800 text-slate-300">
               <tr>
                 <th class="border border-slate-700 px-3 py-2">#</th>
@@ -327,57 +327,78 @@
               <tr><td class="border border-slate-700 px-3 py-2">4</td><td class="border border-slate-700 px-3 py-2">Blood Art</td><td class="border border-slate-700 px-3 py-2">1000</td><td class="border border-slate-700 px-3 py-2">2600</td><td class="border border-slate-700 px-3 py-2">9000</td></tr>
               <tr><td class="border border-slate-700 px-3 py-2">5</td><td class="border border-slate-700 px-3 py-2">Oil Pastel Art</td><td class="border border-slate-700 px-3 py-2">500</td><td class="border border-slate-700 px-3 py-2">1500</td><td class="border border-slate-700 px-3 py-2">6500</td></tr>
                 </tbody>
-          </table>
+          </table> -->
+
+
+
+
+          <table class="w-full text-left border-collapse border border-slate-700 text-sm">
+  <thead class="bg-slate-800 text-slate-300">
+    <tr>
+      <th rowspan="2" class="border border-slate-700 px-3 py-2">#</th>
+      <th rowspan="2" class="border border-slate-700 px-3 py-2">Artwork</th>
+      <th colspan="2" class="border border-slate-700 px-3 py-2 text-center">Single</th>
+      <th colspan="2" class="border border-slate-700 px-3 py-2 text-center">Couple</th>
+      <th rowspan="2" class="border border-slate-700 px-3 py-2">Family</th>
+    </tr>
+    <tr>
+      <th class="border border-slate-700 px-3 py-2">A4</th>
+      <th class="border border-slate-700 px-3 py-2">A3</th>
+      <th class="border border-slate-700 px-3 py-2">A4</th>
+      <th class="border border-slate-700 px-3 py-2">A3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border border-slate-700 px-3 py-2">1</td>
+      <td class="border border-slate-700 px-3 py-2">Black & White Art</td>
+      <td class="border border-slate-700 px-3 py-2">600</td>
+      <td class="border border-slate-700 px-3 py-2">900</td>
+      <td class="border border-slate-700 px-3 py-2">1500</td>
+      <td class="border border-slate-700 px-3 py-2">2300</td>
+      <td class="border border-slate-700 px-3 py-2">4000</td>
+    </tr>
+    <tr>
+      <td class="border border-slate-700 px-3 py-2">2</td>
+      <td class="border border-slate-700 px-3 py-2">Colour Pencil Art</td>
+      <td class="border border-slate-700 px-3 py-2">900</td>
+      <td class="border border-slate-700 px-3 py-2">1300</td>
+      <td class="border border-slate-700 px-3 py-2">2000</td>
+      <td class="border border-slate-700 px-3 py-2">2800</td>
+      <td class="border border-slate-700 px-3 py-2">7000</td>
+    </tr>
+    <tr>
+      <td class="border border-slate-700 px-3 py-2">3</td>
+      <td class="border border-slate-700 px-3 py-2">Water Colour Art</td>
+      <td class="border border-slate-700 px-3 py-2">800</td>
+      <td class="border border-slate-700 px-3 py-2">1500</td>
+      <td class="border border-slate-700 px-3 py-2">2200</td>
+      <td class="border border-slate-700 px-3 py-2">3300</td>
+      <td class="border border-slate-700 px-3 py-2">8000</td>
+    </tr>
+    <tr>
+      <td class="border border-slate-700 px-3 py-2">4</td>
+      <td class="border border-slate-700 px-3 py-2">Blood Art</td>
+      <td class="border border-slate-700 px-3 py-2">1000</td>
+      <td class="border border-slate-700 px-3 py-2">2000</td>
+      <td class="border border-slate-700 px-3 py-2">2600</td>
+      <td class="border border-slate-700 px-3 py-2">4000</td>
+      <td class="border border-slate-700 px-3 py-2">9000</td>
+    </tr>
+    <tr>
+      <td class="border border-slate-700 px-3 py-2">5</td>
+      <td class="border border-slate-700 px-3 py-2">Oil Pastel Art</td>
+      <td class="border border-slate-700 px-3 py-2">500</td>
+      <td class="border border-slate-700 px-3 py-2">800</td>
+      <td class="border border-slate-700 px-3 py-2">1500</td>
+      <td class="border border-slate-700 px-3 py-2">2300</td>
+      <td class="border border-slate-700 px-3 py-2">6500</td>
+    </tr>
+  </tbody>
+</table>
+
         </div>
 
-
-        <!-- Left form -->
-       <!-- <form id="artForm" class="glass p-6 rounded-lg soft-shadow space-y-4">
-  <div>
-    <label class="block text-sm mb-1">Name</label>
-    <input id="name" type="text" class="w-full p-2 rounded bg-slate-800 text-white border border-slate-700" placeholder="Your Name" required/>
-  </div>
-  <div>
-    <label class="block text-sm mb-1">Art Work</label>
-    <select id="artwork" class="w-full p-2 rounded bg-slate-800 text-white border border-slate-700" required>
-      <option value="">Select Art Work</option>
-      <option>Black & White Art</option>
-      <option>Colour Pencil Art</option>
-      <option>Water Colour Art</option>
-      <option>Blood Art</option>
-      <option>Oil Pastel Art</option>
-    </select>
-  </div>
-  <div>
-    <label class="block text-sm mb-1">Option</label>
-    <select id="option" class="w-full p-2 rounded bg-slate-800 text-white border border-slate-700" required>
-      <option value="">Select Frame</option>
-      <option>Single</option>
-      <option>Couple</option>
-      <option>Family</option>
-    </select>
-  </div>
-  <div>
-    <label class="block text-sm mb-1">Description</label>
-    <textarea id="desc" class="w-full p-2 rounded bg-slate-800 text-white border border-slate-700" rows="4" placeholder="Just give more details ..."></textarea>
-  </div>
-
-  <button type="button" id="sendBtn"
-  class="relative w-full overflow-hidden px-6 py-2 rounded-md text-black font-semibold 
-         transition-all duration-300 ease-in-out group"
-  style="background: linear-gradient(90deg,var(--accent),var(--accent-2));">
-  
-  <span class="relative z-10">Send</span>
-  
- 
-  <span class="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 
-               opacity-0 group-hover:opacity-100 blur-lg transition-opacity duration-500"></span>
-  
-  <span class="absolute top-0 left-[-100%] w-full h-full bg-white/20 transform 
-               skew-x-[-45deg] group-hover:left-[200%] transition-all duration-700 ease-out"></span>
-</button>
-
-</form> -->
 <form class="glass p-6 rounded-lg soft-shadow space-y-4">
   <div>
     <label class="block text-sm mb-1">Name</label>
@@ -423,24 +444,39 @@
    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
   <div class="glass p-4 rounded-lg soft-shadow">
     <div class="text-sm text-slate-300">Location</div>
-    <div class="mt-1 font-semibold">HOSUR, India</div>
+    <div class="mt-1 font-semibold">Trichy,TamilNadu, India</div>
   </div>
 
   <div class="glass p-4 rounded-lg soft-shadow">
-    <div class="flex items-center justify-between">
-      <div class=" hidden md:block lg:block">
+  <div class="flex items-center ">
+
+    <div class=" hidden md:block lg:block">
         <div class="text-sm text-slate-300">Mediums</div>
         <div class="mt-1 font-semibold">Pencil · Oil · Watercolor · Blood</div>
       </div>
-
-      <!-- Instagram icon -->
-      <a href="https://www.instagram.com/_yathish.a_?igsh=MW9ybDBtaHk3ajRkYQ==" target="_blank" class="text-pink-400  ml-44  mr- hover:text-pink-500 transition">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+    <!-- Instagram & YouTube icons -->
+    <div class="flex items-center gap-4 h-33 ml-44">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/_yathish.a_?igsh=MW9ybDBtaHk3ajRkYQ==" 
+         target="_blank" 
+         class="text-pink-400 h-33 hover:text-pink-500 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-55">
           <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5ZM12 7a5 5 0 1 1 0 10a5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7Zm5.25-.88a.88.88 0 1 1 0 1.76a.88.88 0 0 1 0-1.76Z"/>
+        </svg>
+      </a>
+
+      <!-- YouTube -->
+      <a href="https://youtube.com/@yathishanbu7496?si=X68mrY2UK5cUAXuo" 
+         target="_blank" 
+         class="text-red-500 hover:text-red-600 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-7 h-22">
+          <path d="M21.8 8s-.2-1.4-.8-2c-.8-.9-1.7-.9-2.1-1C16.7 4.7 12 4.7 12 4.7h-.1s-4.7 0-6.9.3c-.4 0-1.3 0-2.1 1-.6.6-.8 2-.8 2S2 9.6 2 11.3v1.3c0 1.7.2 3.3.2 3.3s.2 1.4.8 2c.8.9 1.9.9 2.4 1 1.7.2 7 .3 7 .3s4.7 0 6.9-.3c.4 0 1.3 0 2.1-1 .6-.6.8-2 .8-2s.2-1.6.2-3.3v-1.3c0-1.7-.2-3.3-.2-3.3ZM10 14.7V9.3l5.3 2.7-5.3 2.7Z"/>
         </svg>
       </a>
     </div>
   </div>
+</div>
+
 </div>
 
 
