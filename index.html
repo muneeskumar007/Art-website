@@ -1,0 +1,416 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yathish Art Portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+
+<script src="script.js " defer></script>
+
+  
+
+  <styl>
+   
+
+  </style>
+</head>
+
+<body class="antialiased">
+  <!-- HEADER -->
+
+  <header class="w-full py-4 px-4 md:px-8 fixed top-0 left-0 bg-gray-900 right-0 z-50">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="#home" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-full flex items-center justify-center glass soft-shadow">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <rect x="3" y="3" width="18" height="18" rx="6" fill="url(#g)"></rect>
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0%" stop-color="#a78bfa" />
+              <stop offset="100%" stop-color="#fda4af" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div>
+        <div class="text-white font-semibold">YATHISHMUTHAIYA</div>
+        <div class="text-xs text-slate-400 -mt-1">Visual Artist</div>
+      </div>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+      <a href="#home" class="hover:text-white  transition">Home</a>
+      <a href="#about" class="hover:text-white transition">About</a>
+      <a href="#gallery" class="hover:text-white transition">Gallery</a>
+      
+      <a href="#contact" class="hover:text-white transition">Contact</a>
+    </nav>
+
+    <!-- mobile menu button -->
+    <div class="md:hidden">
+      <button id="mobileMenuBtn" aria-label="Open menu" class="p-2 glass rounded-md">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-slate-200">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7h16M4 12h16M4 17h16"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- mobile menu -->
+  <div id="mobileNav" class="hidden fixed inset-0 top-[70px] bg-gray-900 m-30 z-40  flex flex-col items-center justify-center space-y-6 text-lg text-slate-100">
+    
+    
+    
+    <a href="#home" class=" hover:text-[var(--accent)]">Home</a>
+    <a href="#gallery" class="hover:text-[var(--accent)]">Gallery</a>
+    <a href="#about" class="hover:text-[var(--accent)]">About</a>
+    <a href="#contact" class="hover:text-[var(--accent)]">Contact</a>
+    </div>
+  
+</header>
+
+
+
+  <!-- HERO -->
+  <main class="pt-28">
+    <section id="home" class=" hero max-w-6xl mx-auto px-4 md:px-8 text-center py-16">
+      <p class="text-sm text-slate-400 uppercase mb-4 tracking-wide">Visual Storytelling</p>
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight bg-gradient-to-r from-[var(--accent)] to-[var(--accent-2)] bg-clip-text text-transparent">
+        Art that whispers — color, form & feeling
+      </h1>
+      <p class="text-slate-300 mt-6 max-w-2xl mx-auto">
+        I explore mood and memory through abstract forms and soft color palettes. Each piece is an invitation — look closer, breathe slower.
+      </p>
+      <div class="mt-8 flex justify-center gap-4">
+        <a href="#gallery" class="px-5 py-3 glass rounded-md hover:scale-[1.03] transition">Explore Gallery</a>
+        <a href="#contact" class="px-5 py-3 rounded-md text-black font-semibold" style="background: linear-gradient(90deg,var(--accent),var(--accent-2));">
+          Hire / Contact
+        </a>
+      </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="max-w-6xl mx-auto px-4 md:px-8 py-12">
+      <h3 class="text-2xl font-semibold mb-4">About ME</h3>
+      <p class="text-slate-300 mb-6">
+        I'm an artist working across painting. My Art work is 100% hand made, explores memory, atmosphere, and subtle forms — often using soft palettes or deep natural tones. I create intuitive pieces that invite quiet reflection. My Work price affordable based on the type of Art work and frame option.All over india Delivery Available.
+      </p>
+
+      <h4 class="text-xl font-semibold mb-2">Art Work</h4>
+      <ul class="list-disc list-inside text-slate-300 space-y-1 mb-8">
+        <li>Black & White Art</li>
+        <li>Colour Pencil Art</li>
+        <li>Water Colour Art</li>
+        <li>Blood Art</li>
+        <li>Oil Pastel Art</li>
+      </ul>
+
+     
+    </section>
+
+
+<!-- GALLERY -->
+<section id="gallery" class="max-w-6xl mx-auto px-4 md:px-8 py-12">
+  <h2 class="text-3xl font-semibold mb-8 text-center">Gallery</h2>
+
+  <!-- First 5 static images -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-5 mb-6">
+    <!-- 1 -->
+    <div class="relative rounded-lg overflow-hidden glass cursor-pointer group art-item">
+      <img src="WhatsApp Image 2025-10-28 at 6.29.33 PM (1).jpeg"
+           class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105" alt="Pencil Art"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-3">
+        <div class="text-white text-sm font-semibold">Pencil Art</div>
+        <div class="text-slate-300 text-xs mt-1">Vijay · 2023</div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="relative rounded-lg overflow-hidden glass cursor-pointer group art-item">
+      <img src="WhatsApp Image 2025-10-28 at 6.29.33 PM.jpeg"
+           alt="Pencil Art"
+           class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105" />
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-3">
+        <div class="text-white text-sm font-semibold">Pencil Art</div>
+        <div class="text-slate-300 text-xs">Virat · 2024</div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="relative rounded-lg overflow-hidden glass cursor-pointer group art-item">
+      <img src="WhatsApp Image 2025-10-28 at 6.29.34 PM (1).jpeg"
+           class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105" alt="Pencil Art"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-3">
+        <div class="text-white text-sm font-semibold">Pencil Art</div>
+        <div class="text-slate-300 text-xs mt-1">Surya · 2022</div>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="relative rounded-lg overflow-hidden glass cursor-pointer group art-item">
+      <img src="WhatsApp Image 2025-10-28 at 6.29.34 PM.jpeg"
+           class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105" alt="Pencil Art"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-3">
+        <div class="text-white text-sm font-semibold">Pencil Art</div>
+        <div class="text-slate-300 text-xs mt-1">Vijay · 2021</div>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="relative rounded-lg overflow-hidden glass cursor-pointer group art-item">
+      <img src="1.jpeg"
+           class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105" alt="Pencil Art"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-3">
+        <div class="text-white text-sm font-semibold">Pencil Art</div>
+        <div class="text-slate-300 text-xs mt-1">2025</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Remaining scrollable images -->
+  <div class="h-90 overflow-y-auto pr-2 space-y-5 scrollbar-hide">
+    <div class="relative rounded-lg overflow-hidden glass cursor-pointer group art-item">
+      <img src="2.jpeg"
+           class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105" alt="Pencil Art"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-3">
+        <div class="text-white text-sm font-semibold">Pencil Art</div>
+        <div class="text-slate-300 text-xs mt-1">2025</div>
+      </div>
+    </div>
+
+    <div class="relative rounded-lg overflow-hidden glass cursor-pointer group art-item">
+      <img src="3.jpeg" class="w-full h-56 object-cover" alt="Pencil Art"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-3">
+        <div class="text-white text-sm font-semibold">Pencil Art</div>
+        <div class="text-slate-300 text-xs mt-1">2025</div>
+      </div>
+    </div>
+
+    <div class="relative rounded-lg overflow-hidden glass cursor-pointer group art-item">
+      <img src="4.jpeg" class="w-full h-56 object-cover" alt="Pencil Art"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-3">
+        <div class="text-white text-sm font-semibold">Pencil Art</div>
+        <div class="text-slate-300 text-xs mt-1">2025</div>
+      </div>
+    </div>
+
+    <div class="relative rounded-lg overflow-hidden glass cursor-pointer group art-item">
+      <img src="5.jpeg" class="w-full h-56 object-cover" alt="Pencil Art"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-3">
+        <div class="text-white text-sm font-semibold">Pencil Art</div>
+        <div class="text-slate-300 text-xs mt-1">2025</div>
+      </div>
+    </div>
+
+    <div class="relative rounded-lg overflow-hidden glass cursor-pointer group art-item">
+      <img src="6.jpeg" class="w-full h-56 object-cover" alt="Pencil Art"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-3">
+        <div class="text-white text-sm font-semibold">Pencil Art</div>
+        <div class="text-slate-300 text-xs mt-1">2025</div>
+      </div>
+    </div>
+
+    <div class="relative rounded-lg overflow-hidden glass cursor-pointer group art-item">
+      <img src="7.jpeg" class="w-full h-56 object-cover" alt="Pencil Art"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-3">
+        <div class="text-white text-sm font-semibold">Pencil Art</div>
+        <div class="text-slate-300 text-xs mt-1">2025</div>
+      </div>
+    </div>
+
+    <div class="relative rounded-lg overflow-hidden glass cursor-pointer group art-item">
+      <img src="8.jpeg" class="w-full h-56 object-cover" alt="Pencil Art"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-3">
+        <div class="text-white text-sm font-semibold">Pencil Art</div>
+        <div class="text-slate-300 text-xs mt-1">2025</div>
+      </div>
+    </div>
+
+    <div class="relative rounded-lg overflow-hidden glass cursor-pointer group art-item">
+      <img src="9.jpeg" class="w-full h-56 object-cover" alt="Pencil Art"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-3">
+        <div class="text-white text-sm font-semibold">Pencil Art</div>
+        <div class="text-slate-300 text-xs mt-1">2025</div>
+      </div>
+    </div>
+
+    <div class="relative rounded-lg overflow-hidden glass cursor-pointer group art-item">
+      <img src="11.jpeg" class="w-full h-56 object-cover" alt="Pencil Art"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-3">
+        <div class="text-white text-sm font-semibold">Pencil Art</div>
+        <div class="text-slate-300 text-xs mt-1">2025</div>
+      </div>
+    </div>
+
+    <div class="relative rounded-lg overflow-hidden glass cursor-pointer group art-item">
+      <img src="12.jpeg" class="w-full h-56 object-cover" alt="Pencil Art"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-3">
+        <div class="text-white text-sm font-semibold">Pencil Art</div>
+        <div class="text-slate-300 text-xs mt-1">2022</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ 
+
+    
+    
+       
+    <!-- CONTACT -->
+    <section id="contact" class="max-w-6xl mx-auto px-4 md:px-8 py-12">
+      <h3 class="text-2xl font-semibold mb-8 text-center">Contact</h3>
+      <h1 class="text-orange-600 text-2xl bold text-center mb-6 font-semibold">Feel free to contact Me for Art work</h1>
+
+      <div class="grid md:grid-cols-2 gap-8">
+         <!-- Left table -->
+        <div class="overflow-x-auto glass p-4 rounded-lg soft-shadow">
+          <table class="w-full text-left border-collapse border border-slate-700 text-sm">
+            <thead class="bg-slate-800 text-slate-300">
+              <tr>
+                <th class="border border-slate-700 px-3 py-2">#</th>
+                <th class="border border-slate-700 px-3 py-2">Artwork</th>
+                <th class="border border-slate-700 px-3 py-2">Single</th>
+                <th class="border border-slate-700 px-3 py-2">Couple</th>
+                <th class="border border-slate-700 px-3 py-2">Family</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border border-slate-700 px-3 py-2">1</td><td class="border border-slate-700 px-3 py-2">Black & White Art</td><td class="border border-slate-700 px-3 py-2">600</td> <td class="border border-slate-700 px-3 py-2">1500</td><td class="border border-slate-700 px-3 py-2">4000</td></tr>
+              <tr><td class="border border-slate-700 px-3 py-2">2</td><td class="border border-slate-700 px-3 py-2">Colour Pencil Art</td><td class="border border-slate-700 px-3 py-2">900</td><td class="border border-slate-700 px-3 py-2">2000</td><td class="border border-slate-700 px-3 py-2">7000</td></tr>
+              <tr><td class="border border-slate-700 px-3 py-2">3</td><td class="border border-slate-700 px-3 py-2">Water Colour Art</td><td class="border border-slate-700 px-3 py-2">800</td><td class="border border-slate-700 px-3 py-2">2200</td><td class="border border-slate-700 px-3 py-2">8000</td></tr>
+              <tr><td class="border border-slate-700 px-3 py-2">4</td><td class="border border-slate-700 px-3 py-2">Blood Art</td><td class="border border-slate-700 px-3 py-2">1000</td><td class="border border-slate-700 px-3 py-2">2600</td><td class="border border-slate-700 px-3 py-2">9000</td></tr>
+              <tr><td class="border border-slate-700 px-3 py-2">5</td><td class="border border-slate-700 px-3 py-2">Oil Pastel Art</td><td class="border border-slate-700 px-3 py-2">500</td><td class="border border-slate-700 px-3 py-2">1500</td><td class="border border-slate-700 px-3 py-2">6500</td></tr>
+                </tbody>
+          </table>
+        </div>
+
+
+        <!-- Left form -->
+        <form class="glass p-6 rounded-lg soft-shadow space-y-4">
+          <div>
+            <label class="block text-sm mb-1">Name</label>
+            <input type="text" class="w-full p-2 rounded bg-slate-800 text-white border border-slate-700" placeholder="Your Name" />
+          </div>
+          <div>
+            <label class="block text-sm mb-1">Art Work</label>
+            <select class="w-full p-2 rounded bg-slate-800 text-white border border-slate-700">
+              <option>select Art Work</option>
+              <option>Black & White Art</option>
+              <option>Colour Pencil Art</option>
+              <option>Water Colour Art</option>
+              <option>Blood Art</option>
+               <option>Oil Pastel Art</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm mb-1">Option</label>
+            <select class="w-full p-2 rounded bg-slate-800 text-white border border-slate-700">
+              <option>Select Frame</option>
+              <option>Single</option>
+              <option>Couple</option>
+              <option>Family</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm mb-1">Description</label>
+            <textarea class="w-full p-2 rounded bg-slate-800 text-white border border-slate-700" rows="4" placeholder="Write your message..."></textarea>
+          </div>
+          <button type="button" class="px-5 py-2 rounded-md text-black font-semibold w-full" style="background: linear-gradient(90deg,var(--accent),var(--accent-2));">Send</button>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class="glass p-4 rounded-lg soft-shadow">
+    <div class="text-sm text-slate-300">Location</div>
+    <div class="mt-1 font-semibold">HOSUR, India</div>
+  </div>
+
+  <div class="glass p-4 rounded-lg soft-shadow">
+    <div class="flex items-center justify-between">
+      <div class=" hidden md:block lg:block">
+        <div class="text-sm text-slate-300">Mediums</div>
+        <div class="mt-1 font-semibold">Pencil · Oil · Watercolor · Blood</div>
+      </div>
+
+      <!-- Instagram icon -->
+      <a href="https://www.instagram.com/_yathish.a_?igsh=MW9ybDBtaHk3ajRkYQ==" target="_blank" class="text-pink-400  ml-44  mr- hover:text-pink-500 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+          <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5ZM12 7a5 5 0 1 1 0 10a5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7Zm5.25-.88a.88.88 0 1 1 0 1.76a.88.88 0 0 1 0-1.76Z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+  <!-- FOOTER -->
+  <footer class="py-8 text-center text-slate-400 text-sm">
+    © <span id="year"></span> YATHISHMUTHAIYA — All rights reserved.
+  </footer>
+
+  <script>
+    
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+
+const mobileBtn = document.getElementById('mobileMenuBtn');
+const mobileNav = document.getElementById('mobileNav');
+
+mobileBtn.addEventListener('click', () => {
+  mobileNav.classList.toggle('hidden');
+  document.body.classList.toggle('overflow-hidden');
+});
+
+// close menu when link clicked
+mobileNav.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileNav.classList.add('hidden');
+    document.body.classList.remove('overflow-hidden');
+  });
+});
+
+
+
+  // Lightbox Preview
+  document.querySelectorAll('.art-item img').forEach(img => {
+    img.addEventListener('click', () => {
+      const src = img.src;
+      const overlay = document.createElement('div');
+      overlay.className = 'fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4';
+      overlay.innerHTML = `
+        <div class="relative max-w-3xl w-full">
+          <img src="${src}" class="w-full h-auto rounded-lg shadow-lg" alt="Artwork preview">
+          <button class="absolute top-2 right-2 text-white text-3xl font-bold" id="closePreview">&times;</button>
+        </div>
+      `;
+      document.body.appendChild(overlay);
+
+      // Close preview
+      document.getElementById('closePreview').addEventListener('click', () => overlay.remove());
+      overlay.addEventListener('click', e => {
+        if (e.target === overlay) overlay.remove();
+      });
+    });
+  });
+
+
+
+    
+  </script>
+</body>
+</html>
