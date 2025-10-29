@@ -300,7 +300,7 @@
     
 
 
-i want visible only five photos remaing all scrolable in mobile view    
+
        
     <!-- CONTACT -->
     <section id="contact" class="max-w-6xl mx-auto px-4 md:px-8 py-12">
@@ -462,8 +462,8 @@ mobileNav.querySelectorAll('a').forEach(link => {
   // for order through whatsapp
   document.getElementById('sendBtn').addEventListener('click', function() {
     const name = document.getElementById('name').value.trim();
-    const artwork = document.getElementById('artwork').value;
-    const option = document.getElementById('option').value;
+    const artwork = document.getElementById('artwork').value.trim();
+    const option = document.getElementById('option').value.trim();
     const desc = document.getElementById('desc').value.trim();
 
     if (!name || !artwork || !option) {
