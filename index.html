@@ -332,7 +332,7 @@
 
 
         <!-- Left form -->
-       <form id="artForm" class="glass p-6 rounded-lg soft-shadow space-y-4">
+       <!-- <form id="artForm" class="glass p-6 rounded-lg soft-shadow space-y-4">
   <div>
     <label class="block text-sm mb-1">Name</label>
     <input id="name" type="text" class="w-full p-2 rounded bg-slate-800 text-white border border-slate-700" placeholder="Your Name" required/>
@@ -377,6 +377,43 @@
                skew-x-[-45deg] group-hover:left-[200%] transition-all duration-700 ease-out"></span>
 </button>
 
+</form> -->
+<form class="glass p-6 rounded-lg soft-shadow space-y-4">
+  <div>
+    <label class="block text-sm mb-1">Name</label>
+    <input id="name" type="text" class="w-full p-2 rounded bg-slate-800 text-white border border-slate-700" placeholder="Your Name" required/>
+  </div>
+
+  <div>
+    <label class="block text-sm mb-1">Art Work</label>
+    <select id="artwork" class="w-full p-2 rounded bg-slate-800 text-white border border-slate-700" required>
+      <option value="">Select Art Work</option>
+      <option value="Black & White Art">Black & White Art</option>
+      <option value="Colour Pencil Art">Colour Pencil Art</option>
+      <option value="Water Colour Art">Water Colour Art</option>
+      <option value="Blood Art">Blood Art</option>
+      <option value="Oil Pastel Art">Oil Pastel Art</option>
+    </select>
+  </div>
+
+  <div>
+    <label class="block text-sm mb-1">Option</label>
+    <select id="option" class="w-full p-2 rounded bg-slate-800 text-white border border-slate-700" required>
+      <option value="">Select Frame</option>
+      <option value="Single">Single</option>
+      <option value="Couple">Couple</option>
+      <option value="Family">Family</option>
+    </select>
+  </div>
+
+  <div>
+    <label class="block text-sm mb-1">Description</label>
+    <textarea id="desc" class="w-full p-2 rounded bg-slate-800 text-white border border-slate-700" rows="4" placeholder="Just give more details ..."></textarea>
+  </div>
+
+  <button id="sendBtn" type="button" class="px-5 py-2 rounded-md text-black font-semibold w-full" style="background: linear-gradient(90deg,var(--accent),var(--accent-2));">
+    Send
+  </button>
 </form>
 
       </div>
@@ -460,28 +497,35 @@ mobileNav.querySelectorAll('a').forEach(link => {
 
 
   // for order through whatsapp
-  document.getElementById('sendBtn').addEventListener('click', function() {
-    const name = document.getElementById('name').value.trim();
-    const artwork = document.getElementById('artwork').value.trim();
-    const option = document.getElementById('option').value.trim();
-    const desc = document.getElementById('desc').value.trim();
+//  
 
-    if (!name || !artwork || !option) {
-      alert('Please fill in all required fields!');
-      return;
-    }
+document.getElementById('sendBtn').addEventListener('click', function() {
+  const name = document.getElementById('name').value.trim();
+  const artwork = document.getElementById('artwork').value.trim();
+  const option = document.getElementById('option').value.trim();
+  const desc = document.getElementById('desc').value.trim();
 
-    const message = `🎨 *New Art Request*%0A
-👤 *Name:* ${name}%0A
-🖌️ *Art Work:* ${artwork}%0A
-🖼️ *Option:* ${option}%0A
-📝 *Description:* ${desc || 'N/A'}%0A`;
+  if (!name || !artwork || !option) {
+    alert('Please fill in all required fields!');
+    return;
+  }
 
-    const phoneNumber = "7904911507"; // 🔹 Replace with your WhatsApp number (e.g., 919876543210)
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+  // Build the message cleanly
+  const message = 
+`🎨 *New Art Request*
+👤 *Name:* ${name}
+🖌️ *Art Work:* ${artwork}
+🖼️ *Option:* ${option}
+📝 *Description:* ${desc || 'N/A'}`;
 
-    window.open(whatsappURL, "_blank");
-  });
+  // Encode full message safely for WhatsApp
+  const encodedMessage = encodeURIComponent(message);
+
+  const phoneNumber = "917904911507"; // 🔹 replace with your WhatsApp number
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+  window.open(whatsappURL, "_blank");
+});
 
 
     
