@@ -7,8 +7,8 @@
     // document.getElementById('whatsappLink').href = 'https://wa.me/' + WHATSAPP_NUMBER;
 
     // ---------- Mobile Menu Toggle ----------
-    const mobileBtn = document.getElementById('mobileMenuBtn');
-    const mobileNav = document.getElementById('mobileNav');
+    // const mobileBtn = document.getElementById('mobileMenuBtn');
+    // const mobileNav = document.getElementById('mobileNav');
     mobileBtn.addEventListener('click', () => {
       mobileNav.classList.toggle('hidden');
        document.body.classList.toggle('overflow-hidden');
